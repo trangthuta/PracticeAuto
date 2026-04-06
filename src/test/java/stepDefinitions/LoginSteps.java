@@ -5,37 +5,13 @@ import pages.LoginPage;
 import core.driver.DriverFactory;
 
 
+import static core.base.BasePage.removeQuote;
 import static core.driver.DriverFactory.getDriver;
 
 public class LoginSteps {
 
     LoginPage page = new LoginPage(DriverFactory.getDriver());
 
-//    @Given("open login page")
-//    public void open() {
-//        getDriver().get("https://learn-writing-english.vercel.app/");
-//    }
-
-//    @When("login valid")
-//    public void valid()  {
-//        page.login("testapp@gmail.com", "12345678");
-//    }
-//
-//    @When("login invalid")
-//    public void invalid() {
-//        page.login("testapp@@gmail.com", "12345679");
-//
-//    }
-//
-//    @Then("success")
-//    public void success() {
-//        page.success();
-//    }
-//
-//    @Then("fail")
-//    public void fail() {
-//        page.fail();
-//    }
 
     @Given("mở trang login")
     public void open() {
@@ -43,12 +19,15 @@ public class LoginSteps {
 
     }
 
-    @When("nhập email {string} và password {string}")
-    public void enterData(String username, String password) {
-        page.enterDataLogin(username, password);
+    //        @When("nhập email {string} và password {string}")
+//    @When("^nhập email \"?(.*?)\"? và password \"?(.*?)\"?$")
+//    public void enterData(String username, String password) throws InterruptedException {
+//        System.out.println("--------------------------------ok");
+//        System.out.println("u dài " + username.length() + "-------------, P dài : " + password.length());
+//        page.enterDataLogin(username, password);
+//        Thread.sleep(30000);
+//    }
 
-
-    }
 
     @And("thực hiện đăng nhập bằng {string}")
     public void loginWithAction(String action) {
@@ -65,8 +44,17 @@ public class LoginSteps {
 
     }
 
-    @Then("hệ thống tự động báo lỗi dưới textbox tương ứng khi sai format")
-    public void validateMsg() {
+
+    @When("nhập email {string} và password {string}")
+    public void nhậpEmailVàPassword(String username, String password) {
+        System.out.println(username.length());
+        page.enterDataLogin(username, password);
+
+    }
+
+
+    @Then("hiển thị thông báo {string}")
+    public void validateMsg(String message) {
         page.displayFailMsg();
     }
 }

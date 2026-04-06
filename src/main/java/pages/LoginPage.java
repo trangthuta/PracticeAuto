@@ -14,10 +14,12 @@ import java.util.List;
 public class LoginPage extends BasePage {
 
 
-    @FindBy(id = "standard-basic")
+//    @FindBy(id = "standard-basic")
+    @FindBy(id = "_r_0_")
     private WebElement email;
 
-    @FindBy(id = "standard-password-input")
+//    @FindBy(id = "standard-password-input")
+    @FindBy(id = "_r_1_")
     private WebElement passw;
 
     @FindBy(xpath = "(//button[@type='button'])[2]")
@@ -35,8 +37,11 @@ public class LoginPage extends BasePage {
     @FindBy(xpath = "//div[@role='alert'] ")
     private WebElement messLoginFailed;
 
-    @FindBy(className = "errorMessage")
-    private List<WebElement> listValidateMsg;
+    @FindBy(xpath = "(//p[@class='errorMessage'])[1]")
+    private WebElement errorValidateUsername;
+
+    @FindBy(xpath = "(//p[@class='errorMessage'])[2]")
+    private WebElement errorValidatePassword;
 
     public LoginPage(WebDriver driver) {
         super(driver);
@@ -44,6 +49,7 @@ public class LoginPage extends BasePage {
 
     public void enterDataLogin(String user, String pass) {
         System.out.println(user + "   " + pass);
+        System.out.println(user.length() + "   " + pass.length());
         sendKeys(email, user);
         sendKeys(passw, pass);
 
@@ -59,20 +65,19 @@ public class LoginPage extends BasePage {
     }
 
     public void success() {
-        verifyDisplayElement(mainPage);
+        verifyDisplayElementHasText(mainPage);
     }
 
     public void displayFailMsg() {
-//        System.out.println(listValidateMsg.size() + "----------------");
-//        if (listValidateMsg.isEmpty()) {
-//            System.out.println("+++++++++++");
-//            Assert.fail("Danh sách thông báo lỗi rỗng, không có element để verify!");
-//        }
-
-        for (WebElement e : listValidateMsg) {
-            verifyDisplayElement(e);
-
-        }
+        getWait().until(ExpectedConditions.visibilityOf(errorValidateUsername));
+        getWait().until(ExpectedConditions.visibilityOf(errorValidatePassword));
+        Boolean isError;
+        if (errorValidateUsername.getText().trim().isEmpty() && errorValidatePassword.getText().trim().isEmpty()) {
+            isError = false;
+        } else {
+            isError = true;
+            System.out.println(errorValidatePassword.getText() + " | " + errorValidateUsername.getText());        }
+        Assert.assertTrue(isError);
     }
 
 

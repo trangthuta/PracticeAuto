@@ -1,5 +1,5 @@
-<suite name="Suite" parallel="tests" thread-count="2">
-    <test name="Chrome">
+<suite name="Suite" parallel="tests" thread-count="3">
+    <test name="ChromeTest">
         <parameter name="browser" value="chrome"/>
     <classes>
         <class name="runners.TestUiRunner"/>

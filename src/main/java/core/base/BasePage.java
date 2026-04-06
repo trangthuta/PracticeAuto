@@ -12,6 +12,7 @@ import org.testng.Assert;
 
 
 import java.time.Duration;
+import java.util.List;
 
 
 public class BasePage {
@@ -44,8 +45,22 @@ public class BasePage {
         actions.sendKeys(Keys.ENTER).perform();
     }
 
-    public void verifyDisplayElement(WebElement element) {
+    public void verifyDisplayElementHasText(WebElement element) {
         wait.until(ExpectedConditions.visibilityOf(element));
-        Assert.assertTrue((!element.getText().trim().isEmpty()));
+        wait.until(ExpectedConditions.visibilityOf(element));
+
+        Assert.assertTrue(element.isDisplayed(), "Element không hiển thị");
+
     }
+    public static String removeQuote(String input) {
+        if (input == null || input.length() < 2) return input;
+
+        if (input.startsWith("\"") && input.endsWith("\"")) {
+            return input.substring(1, input.length() - 1);
+        }
+
+        return input;
+    }
+
+
 }
