@@ -14,49 +14,35 @@ import java.util.List;
 public class LoginPage extends BasePage {
 
 
-//    @FindBy(id = "standard-basic")
-    @FindBy(id = "_r_0_")
+    @FindBy(id = "email")
     private WebElement email;
 
-//    @FindBy(id = "standard-password-input")
-    @FindBy(id = "_r_1_")
+    @FindBy(id = "password")
     private WebElement passw;
 
-    @FindBy(xpath = "(//button[@type='button'])[2]")
-    private WebElement button;
+    @FindBy(tagName = "button")
+    private WebElement loginButton;
 
-    @FindBy(xpath = "(//p[@class='errorMessage'])[1]")
-    private WebElement validEmail;
+    @FindBy(id = "tc_aside_menu")
+    private WebElement menuMainPage;
 
-    @FindBy(xpath = "(//p[@class='errorMessage'])[2]")
-    private WebElement validPass;
 
-    @FindBy(className = "form")
-    private WebElement mainPage;
+    @FindBy(xpath = "//span[text()='invalid Credentials']")
+    private WebElement messError;
 
-    @FindBy(xpath = "//div[@role='alert'] ")
-    private WebElement messLoginFailed;
-
-    @FindBy(xpath = "(//p[@class='errorMessage'])[1]")
-    private WebElement errorValidateUsername;
-
-    @FindBy(xpath = "(//p[@class='errorMessage'])[2]")
-    private WebElement errorValidatePassword;
 
     public LoginPage(WebDriver driver) {
         super(driver);
     }
 
     public void enterDataLogin(String user, String pass) {
-        System.out.println(user + "   " + pass);
-        System.out.println(user.length() + "   " + pass.length());
         sendKeys(email, user);
         sendKeys(passw, pass);
 
     }
 
     public void clickToLogin() {
-        click(button);
+        click(loginButton);
 
     }
 
@@ -65,20 +51,25 @@ public class LoginPage extends BasePage {
     }
 
     public void success() {
-        verifyDisplayElementHasText(mainPage);
+        verifyDisplayElementHasText(menuMainPage);
     }
 
-    public void displayFailMsg() {
-        getWait().until(ExpectedConditions.visibilityOf(errorValidateUsername));
-        getWait().until(ExpectedConditions.visibilityOf(errorValidatePassword));
-        Boolean isError;
-        if (errorValidateUsername.getText().trim().isEmpty() && errorValidatePassword.getText().trim().isEmpty()) {
-            isError = false;
-        } else {
-            isError = true;
-            System.out.println(errorValidatePassword.getText() + " | " + errorValidateUsername.getText());        }
-        Assert.assertTrue(isError);
+    public void fail() {
+        verifyDisplayElementHasText(messError);
     }
+
+//    public void displayFailMsg() {
+//        getWait().until(ExpectedConditions.visibilityOf(errorValidateUsername));
+//        getWait().until(ExpectedConditions.visibilityOf(errorValidatePassword));
+//        Boolean isError;
+//        if (errorValidateUsername.getText().trim().isEmpty() && errorValidatePassword.getText().trim().isEmpty()) {
+//            isError = false;
+//        } else {
+//            isError = true;
+//            System.out.println(errorValidatePassword.getText() + " | " + errorValidateUsername.getText());
+//        }
+//        Assert.assertTrue(isError);
+//    }
 
 
 }

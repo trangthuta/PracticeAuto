@@ -3,10 +3,7 @@ package stepDefinitions;
 import io.cucumber.java.en.*;
 import pages.LoginPage;
 import core.driver.DriverFactory;
-
-
-import static core.base.BasePage.removeQuote;
-import static core.driver.DriverFactory.getDriver;
+import utils.HandleOutlineData;
 
 public class LoginSteps {
 
@@ -15,8 +12,6 @@ public class LoginSteps {
 
     @Given("mở trang login")
     public void open() {
-        getDriver().get("https://learn-writing-english.vercel.app/");
-
     }
 
     //        @When("nhập email {string} và password {string}")
@@ -38,23 +33,32 @@ public class LoginSteps {
         }
     }
 
-    @Then("hệ thống tự động navigate đến Trang chính khi đăng nhập thành công")
-    public void navigateToMainPage() {
-        page.success();
+//    @Then("hệ thống tự động navigate đến Trang chính khi đăng nhập thành công")
+//    public void navigateToMainPage() {
+//        page.success();
+//
+//    }
 
-    }
 
-
-    @When("nhập email {string} và password {string}")
+    @When("^nhập email (.+) và password (.+)$")
     public void nhậpEmailVàPassword(String username, String password) {
-        System.out.println(username.length());
+        username = HandleOutlineData.normalizeInput(username);
+        password = HandleOutlineData.normalizeInput(password);
         page.enterDataLogin(username, password);
+    }
 
+    @Then("login {string}")
+    public void login(String state) {
+        if (state.equals("thành công")) {
+            page.success();
+        } else {
+            page.fail();
+        }
     }
 
 
-    @Then("hiển thị thông báo {string}")
-    public void validateMsg(String message) {
-        page.displayFailMsg();
-    }
+//    @Then("hiển thị thông báo {string}")
+//    public void validateMsg(String message) {
+//        page.displayFailMsg();
+//    }
 }

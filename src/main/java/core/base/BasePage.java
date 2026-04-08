@@ -47,11 +47,11 @@ public class BasePage {
 
     public void verifyDisplayElementHasText(WebElement element) {
         wait.until(ExpectedConditions.visibilityOf(element));
-        wait.until(ExpectedConditions.visibilityOf(element));
-
+        System.out.println(element.getText());
         Assert.assertTrue(element.isDisplayed(), "Element không hiển thị");
 
     }
+
     public static String removeQuote(String input) {
         if (input == null || input.length() < 2) return input;
 

@@ -2,6 +2,6 @@ utils\Json.class
 utils\Excel.class
 pages\LoginPage.class
 core\base\BasePage.class
+utils\HandleOutlineData.class
 utils\ScreenshotUtils.class
-utils\ConfigReader.class
 core\driver\DriverFactory.class

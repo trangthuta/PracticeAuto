@@ -1,18 +1,41 @@
 Feature: Login
 
-  Background:
-    Given mở trang login
+#//test thử backgroud
+  Scenario Outline: Kiểm tra chức năng login
 
-  Scenario Outline:Login thất bại do validation input
+    Given mở trang login
     When nhập email "<username>" và password "<password>"
     And thực hiện đăng nhập bằng "<action>"
-    Then hiển thị thông báo "<message>"
-    Examples:
-      | username             | password   | action | message                          |
+    Then login "<state>"
 
-      # ===== EMPTY =====
-      |                      |            | enter  | Không được để trống!             |
-      |                      |            | click  | Không được để trống!             |
+    Examples:
+      | username                                    | password          | action | state      |
+      | admin@email.com                             | 123               | click  | thành công |
+      | owner@email.com                             | 123               | enter  | thành công |
+      | "         owner@email.com                 " | "  123"           | enter  | thành công |
+      |                                             |                   | click  | thất bại   |
+      |                                             |                   | enter  | thất bại   |
+      | "                      "                    | "               " | click  | thất bại   |
+      | "                      "                    | "               " | enter  | thất bại   |
+
+
+
+
+
+
+#  Background:
+#    Given mở trang login
+#
+#  Scenario Outline:Login thất bại do validation input
+#    When nhập email "<username>" và password "<password>"
+#    And thực hiện đăng nhập bằng "<action>"
+#    Then hiển thị thông báo "<message>"
+#    Examples:
+#      | username             | password   | action | message                          |
+#
+#      # ===== EMPTY =====
+#      |                      |            | enter  | Không được để trống!             |
+#      |                      |            | click  | Không được để trống!             |
 #      | test@gmail.com       |            | enter  | Không được để trống!             |
 #      | test@gmail.com       |            | click  | Không được để trống!             |
 #      |                      | 12345678   | enter  | Không được để trống!             |
