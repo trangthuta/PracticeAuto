@@ -1,3 +1,4 @@
-stepDefinitions\LoginSteps.class
+stepDefinitions\ui\pages\LoginPage.class
+stepDefinitions\ui\LoginSteps.class
 hooks\Hooks.class
 runners\TestUiRunner.class

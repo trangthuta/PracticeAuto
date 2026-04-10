@@ -6,24 +6,29 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Parameters;
 
 
 public class DriverFactory {
     private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
-    public static void initDriver(String browser) {
-//        driver.set(new ChromeDriver());
-//        if (browser.equalsIgnoreCase("chrome")) {
-//            driver.set(new ChromeDriver());
-//        } else {
-//            driver.set(new EdgeDriver());
-//        }
+    public static void setBrowser(String browser) {
+        System.out.println(browser);
+        if (browser.equalsIgnoreCase("chrome")) {
+            ChromeOptions options = new ChromeOptions();
+            options.addArguments("--guest");
+
+            driver.set(new ChromeDriver(options));
+
+        } else if (browser.equalsIgnoreCase("firefox")) {
+            driver.set(new FirefoxDriver());
+        }
 
 //        ------
-        ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.addArguments("--guest");
-
-        driver.set(new ChromeDriver(chromeOptions));
+//        ChromeOptions chromeOptions = new ChromeOptions();
+//        chromeOptions.addArguments("--guest");
+//
+//        driver.set(new ChromeDriver(chromeOptions));
 //        -------------------------------------------------
 
     }

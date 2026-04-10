@@ -12,13 +12,22 @@ import static core.driver.DriverFactory.getDriver;
 public class Hooks {
     @Before
     public void setUp() {
-        DriverFactory.initDriver("chrome");
-        getDriver().get("https://rawal-admin.themes-coder.net/admin/login");
-        DriverFactory.getDriver().manage().window().maximize();
+
+        String browser = System.getProperty("browser", "chrome");
+
+        DriverFactory.setBrowser(browser);
+
+        DriverFactory.getDriver()
+                .get("https://rawal-admin.themes-coder.net/admin/login");
+
+        DriverFactory.getDriver()
+                .manage()
+                .window()
+                .maximize();
     }
 
     @After
-    public void tearDown(Scenario scenario){
+    public void tearDown(Scenario scenario) {
         ScreenshotUtils.takeScreenshot(scenario);
         DriverFactory.quit();
     }
