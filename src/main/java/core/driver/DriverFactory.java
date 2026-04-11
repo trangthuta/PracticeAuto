@@ -15,21 +15,13 @@ public class DriverFactory {
     public static void setBrowser(String browser) {
         System.out.println(browser);
         if (browser.equalsIgnoreCase("chrome")) {
-            ChromeOptions options = new ChromeOptions();
-            options.addArguments("--guest");
-
-            driver.set(new ChromeDriver(options));
-
+            driver.set(new ChromeDriver());
         } else if (browser.equalsIgnoreCase("firefox")) {
             driver.set(new FirefoxDriver());
+        } else if (browser.equalsIgnoreCase("edge")) {
+            driver.set(new EdgeDriver());
         }
 
-//        ------
-//        ChromeOptions chromeOptions = new ChromeOptions();
-//        chromeOptions.addArguments("--guest");
-//
-//        driver.set(new ChromeDriver(chromeOptions));
-//        -------------------------------------------------
 
     }
 

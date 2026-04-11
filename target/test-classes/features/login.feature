@@ -9,13 +9,13 @@ Feature: Login
 
     Examples:
       | username                 | password          | action | expect   |
-#      | admin@email.com                             | 123               | click  | thành công |
+      | admin@email.com                             | 123               | click  | thành công |
 #      | owner@email.com                             | 123               | enter  | thành công |
 #      | "         owner@email.com                 " | "  123"           | enter  | thành công |
 #      |                                             |                   | click  | thất bại   |
 #      |                                             |                   | enter  | thất bại   |
 #      | "                      "                    | "               " | click  | thất bại   |
-      | "                      " | "               " | enter  | thất bại |
+#      | "                      " | "               " | enter  | thất bại |
 
 
 

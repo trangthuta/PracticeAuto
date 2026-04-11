@@ -12,14 +12,10 @@ import static core.driver.DriverFactory.getDriver;
 public class Hooks {
     @Before
     public void setUp() {
-
         String browser = System.getProperty("browser", "chrome");
-
         DriverFactory.setBrowser(browser);
-
         DriverFactory.getDriver()
                 .get("https://rawal-admin.themes-coder.net/admin/login");
-
         DriverFactory.getDriver()
                 .manage()
                 .window()

@@ -9,20 +9,9 @@ public class LoginSteps {
 
     LoginPage page = new LoginPage(DriverFactory.getDriver());
 
-
     @Given("mở trang login")
     public void open() {
     }
-
-    //        @When("nhập email {string} và password {string}")
-//    @When("^nhập email \"?(.*?)\"? và password \"?(.*?)\"?$")
-//    public void enterData(String username, String password) throws InterruptedException {
-//        System.out.println("--------------------------------ok");
-//        System.out.println("u dài " + username.length() + "-------------, P dài : " + password.length());
-//        page.enterDataLogin(username, password);
-//        Thread.sleep(30000);
-//    }
-
 
     @And("thực hiện đăng nhập bằng {string}")
     public void loginWithAction(String action) {
@@ -33,11 +22,8 @@ public class LoginSteps {
         }
     }
 
-
-
-
     @When("^nhập email (.+) và password (.+)$")
-    public void nhậpEmailVàPassword(String username, String password) {
+    public void inputData(String username, String password) {
         username = HandleOutlineData.normalizeInput(username);
         password = HandleOutlineData.normalizeInput(password);
         page.enterDataLogin(username, password);
@@ -51,10 +37,4 @@ public class LoginSteps {
             page.fail();
         }
     }
-
-
-//    @Then("hiển thị thông báo {string}")
-//    public void validateMsg(String message) {
-//        page.displayFailMsg();
-//    }
 }
