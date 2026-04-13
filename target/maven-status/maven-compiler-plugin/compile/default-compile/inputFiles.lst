@@ -1,7 +1,7 @@
-G:\PracticeAuto\PracticeAuto\src\main\java\core\base\BasePage.java
-G:\PracticeAuto\PracticeAuto\src\main\java\core\driver\DriverFactory.java
-G:\PracticeAuto\PracticeAuto\src\main\java\utils\ConfigReader.java
-G:\PracticeAuto\PracticeAuto\src\main\java\utils\Excel.java
-G:\PracticeAuto\PracticeAuto\src\main\java\utils\HandleOutlineData.java
-G:\PracticeAuto\PracticeAuto\src\main\java\utils\Json.java
-G:\PracticeAuto\PracticeAuto\src\main\java\utils\ScreenshotUtils.java
+F:\PracticeAuto\src\main\java\core\base\BasePage.java
+F:\PracticeAuto\src\main\java\utils\Json.java
+F:\PracticeAuto\src\main\java\core\driver\DriverFactory.java
+F:\PracticeAuto\src\main\java\utils\HandleOutlineData.java
+F:\PracticeAuto\src\main\java\utils\ScreenshotUtils.java
+F:\PracticeAuto\src\main\java\utils\ConfigReader.java
+F:\PracticeAuto\src\main\java\utils\Excel.java

@@ -75,10 +75,13 @@
                 <version>3.0.0</version>
 
                 <configuration>
-                    <includes>
-                        <include>**/TestUiRunner.java</include>
-                    </includes>
-
+<!--                    <includes>-->
+<!--                        <include>**/TestUiRunner.java</include>-->
+<!--                    </includes>-->
+                    <suiteXmlFiles>
+                        <suiteXmlFile>src/main/resources/cross-browser.xml</suiteXmlFile>
+<!--                        <suiteXmlFile>src/main/resources/parallel.xml</suiteXmlFile>-->
+                    </suiteXmlFiles>
                     <!-- Setup Allure report -->
                     <argLine>
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/1.9.25.1/aspectjweaver-1.9.25.1.jar"

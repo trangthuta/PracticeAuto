@@ -11,10 +11,23 @@ import org.testng.annotations.*;
         plugin = {
                 "pretty",
                 "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
-                "html:target/cucumber-report.html"
         }
 )
 public class TestUiRunner extends AbstractTestNGCucumberTests {
+    public static String browser;
+
+    @Parameters("browser")
+    @BeforeClass
+    public void setupBrowser(@Optional("chrome")String browserName) {
+        browser = browserName;
+        DriverFactory.setBrowserName(browser);
+    }
+
+    @Override
+    @DataProvider(parallel = false)
+    public Object[][] scenarios() {
+        return super.scenarios();
+    }
 
 }
 

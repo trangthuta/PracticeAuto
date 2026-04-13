@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: runners.TestUiRunner
+Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.407 s - in runners.TestUiRunner
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 19.68 s - in TestSuite
