@@ -1,20 +1,20 @@
-<suite name="Suite" parallel="tests" thread-count="3">
+<suite name="Suite" parallel="tests" thread-count="6">
     <test name="ChromeTest">
         <parameter name="browser" value="chrome"/>
     <classes>
-        <class name="runners.TestUiRunner"/>
+        <class name="runners.CrossBrowserRunner"/>
     </classes>
     </test>
     <test name="FirefoxTest">
         <parameter name="browser" value="firefox"/>
         <classes>
-            <class name="runners.TestUiRunner"/>
+            <class name="runners.CrossBrowserRunner"/>
         </classes>
     </test>
     <test name="EdgeTest">
         <parameter name="browser" value="edge"/>
         <classes>
-            <class name="runners.TestUiRunner"/>
+            <class name="runners.CrossBrowserRunner"/>
         </classes>
     </test>
 </suite>

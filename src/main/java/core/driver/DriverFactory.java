@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+
 public class DriverFactory {
 
     private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
@@ -20,8 +21,17 @@ public class DriverFactory {
 
 
     public static void initDriver() {
-
-        switch (browserName.get().toLowerCase()) {
+        String browser = browserName.get();
+        if (browser == null || browser.isEmpty()) {
+            if (System.getProperty("browser") == null) {
+                browser = "chrome";
+            } else {
+                browser = System.getProperty("browser");
+            }
+        }
+        System.out.println("Thread: " + Thread.currentThread().getId()
+                + " | Browser: " + browser);
+        switch (browser.toLowerCase()) {
 
             case "firefox":
                 driver.set(new FirefoxDriver());
@@ -34,6 +44,7 @@ public class DriverFactory {
             default:
                 driver.set(new ChromeDriver());
         }
+
     }
 
 
