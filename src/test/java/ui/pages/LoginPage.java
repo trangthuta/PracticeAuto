@@ -5,24 +5,20 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import static core.driver.DriverFactory.getDriver;
+
 
 public class LoginPage extends BasePage {
-
-
-    @FindBy(id = "email")
-    private WebElement email;
+    @FindBy(id = "user-name")
+    private WebElement username;
 
     @FindBy(id = "password")
     private WebElement passw;
 
-    @FindBy(tagName = "button")
+    @FindBy(id = "login-button")
     private WebElement loginButton;
 
-    @FindBy(id = "tc_aside_menu")
-    private WebElement menuMainPage;
-
-
-    @FindBy(xpath = "//span[text()='invalid Credentials']")
+    @FindBy(className = "error-button")
     private WebElement messError;
 
 
@@ -30,30 +26,10 @@ public class LoginPage extends BasePage {
         super(driver);
     }
 
-    public void enterDataLogin(String user, String pass) {
-        sendKeys(email, user);
+    public HomePage login(String user, String pass) {
+        sendKeys(username, user);
         sendKeys(passw, pass);
-
-    }
-
-    public void clickToLogin() {
         click(loginButton);
-
+        return new HomePage(getDriver());
     }
-
-    public void enterToLogin() {
-        enter();
-    }
-
-    public void success() {
-        verifyDisplayed(menuMainPage);
-    }
-
-    public void fail() {
-        verifyDisplayed(messError);
-    }
-
-
-
-
 }

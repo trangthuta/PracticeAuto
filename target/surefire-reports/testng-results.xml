@@ -1,40 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-18T14:24:16 ICT" name="Suite" finished-at="2026-04-18T14:24:48 ICT" duration-ms="31502">
+  <suite started-at="2026-04-29T14:19:17 ICT" name="ParallelSuite" finished-at="2026-04-29T14:19:25 ICT" duration-ms="7593">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CrossBrowserRunner@614aeccc]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CrossBrowserRunner@5b22b970]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CrossBrowserRunner@7df60067]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.ParallelRunner@6b3871d6]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-04-18T14:24:16 ICT" name="ChromeTest" finished-at="2026-04-18T14:24:42 ICT" duration-ms="25236">
-      <class name="runners.CrossBrowserRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.CrossBrowserRunner@614aeccc]" started-at="2026-04-18T14:24:17 ICT" name="setUpClass" finished-at="2026-04-18T14:24:17 ICT" duration-ms="652" status="PASS">
+    <test started-at="2026-04-29T14:19:17 ICT" name="Parallel" finished-at="2026-04-29T14:19:25 ICT" duration-ms="7593">
+      <class name="runners.ParallelRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.ParallelRunner@6b3871d6]" started-at="2026-04-29T14:19:17 ICT" name="setUpClass" finished-at="2026-04-29T14:19:18 ICT" duration-ms="566" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@4390f46e]]>
+                <![CDATA[org.testng.TestRunner@6ae62c7e]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="setupBrowser(java.lang.String)[pri:0, instance:runners.CrossBrowserRunner@614aeccc]" started-at="2026-04-18T14:24:17 ICT" name="setupBrowser" finished-at="2026-04-18T14:24:17 ICT" duration-ms="8" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupBrowser -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CrossBrowserRunner@614aeccc]" started-at="2026-04-18T14:24:17 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-18T14:24:30 ICT" duration-ms="12926" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.ParallelRunner@6b3871d6]" started-at="2026-04-29T14:19:18 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-29T14:19:25 ICT" duration-ms="6928" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -50,151 +37,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CrossBrowserRunner@614aeccc]" started-at="2026-04-18T14:24:30 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-18T14:24:42 ICT" duration-ms="11532" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Kiểm tra chức năng login"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.CrossBrowserRunner@614aeccc]" started-at="2026-04-18T14:24:42 ICT" name="tearDownClass" finished-at="2026-04-18T14:24:42 ICT" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.ParallelRunner@6b3871d6]" started-at="2026-04-29T14:19:25 ICT" name="tearDownClass" finished-at="2026-04-29T14:19:25 ICT" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- runners.CrossBrowserRunner -->
-    </test> <!-- ChromeTest -->
-    <test started-at="2026-04-18T14:24:16 ICT" name="EdgeTest" finished-at="2026-04-18T14:24:43 ICT" duration-ms="26277">
-      <class name="runners.CrossBrowserRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.CrossBrowserRunner@7df60067]" started-at="2026-04-18T14:24:17 ICT" name="setUpClass" finished-at="2026-04-18T14:24:17 ICT" duration-ms="652" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@7c6442c2]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="setupBrowser(java.lang.String)[pri:0, instance:runners.CrossBrowserRunner@7df60067]" started-at="2026-04-18T14:24:17 ICT" name="setupBrowser" finished-at="2026-04-18T14:24:17 ICT" duration-ms="8" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupBrowser -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CrossBrowserRunner@7df60067]" started-at="2026-04-18T14:24:17 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-18T14:24:32 ICT" duration-ms="15010" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Kiểm tra chức năng login"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CrossBrowserRunner@7df60067]" started-at="2026-04-18T14:24:32 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-18T14:24:43 ICT" duration-ms="10506" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Kiểm tra chức năng login"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.CrossBrowserRunner@7df60067]" started-at="2026-04-18T14:24:43 ICT" name="tearDownClass" finished-at="2026-04-18T14:24:43 ICT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- runners.CrossBrowserRunner -->
-    </test> <!-- EdgeTest -->
-    <test started-at="2026-04-18T14:24:16 ICT" name="FirefoxTest" finished-at="2026-04-18T14:24:48 ICT" duration-ms="31502">
-      <class name="runners.CrossBrowserRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.CrossBrowserRunner@5b22b970]" started-at="2026-04-18T14:24:17 ICT" name="setUpClass" finished-at="2026-04-18T14:24:17 ICT" duration-ms="653" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@121c54fa]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="setupBrowser(java.lang.String)[pri:0, instance:runners.CrossBrowserRunner@5b22b970]" started-at="2026-04-18T14:24:17 ICT" name="setupBrowser" finished-at="2026-04-18T14:24:17 ICT" duration-ms="8" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupBrowser -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CrossBrowserRunner@5b22b970]" started-at="2026-04-18T14:24:17 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-18T14:24:34 ICT" duration-ms="16296" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Kiểm tra chức năng login"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CrossBrowserRunner@5b22b970]" started-at="2026-04-18T14:24:34 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-18T14:24:48 ICT" duration-ms="14446" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Kiểm tra chức năng login"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.CrossBrowserRunner@5b22b970]" started-at="2026-04-18T14:24:48 ICT" name="tearDownClass" finished-at="2026-04-18T14:24:48 ICT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- runners.CrossBrowserRunner -->
-    </test> <!-- FirefoxTest -->
-  </suite> <!-- Suite -->
+      </class> <!-- runners.ParallelRunner -->
+    </test> <!-- Parallel -->
+  </suite> <!-- ParallelSuite -->
 </testng-results>

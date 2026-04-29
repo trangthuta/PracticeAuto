@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="33.042" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="9.466" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="22"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Users\ADMIN\.jdks\corretto-22.0.2\bin"/>
-    <property name="sun.java.command" value="C:\Users\ADMIN\AppData\Local\Temp\surefire4595238713396841816\surefirebooter-20260418142414409_3.jar C:\Users\ADMIN\AppData\Local\Temp\surefire4595238713396841816 2026-04-18T14-24-14_208-jvmRun1 surefire-20260418142414409_1tmp surefire_0-20260418142414409_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\ADMIN\AppData\Local\Temp\surefire11099301003809670731\surefirebooter-20260429141915009_3.jar C:\Users\ADMIN\AppData\Local\Temp\surefire11099301003809670731 2026-04-29T14-19-14_836-jvmRun1 surefire-20260429141915009_1tmp surefire_0-20260429141915009_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="F:\PracticeAuto\target\test-classes;F:\PracticeAuto\target\classes;C:\Users\ADMIN\.m2\repository\org\seleniumhq\selenium\selenium-java\4.18.1\selenium-java-4.18.1.jar;C:\Users\ADMIN\.m2\repository\org\seleniumhq\selenium\selenium-api\4.18.1\selenium-api-4.18.1.jar;C:\Users\ADMIN\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.18.1\selenium-chrome-driver-4.18.1.jar;C:\Users\ADMIN\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\ADMIN\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.18.1\selenium-chromium-driver-4.18.1.jar;C:\Users\ADMIN\.m2\repository\org\seleniumhq\selenium\selenium-json\4.18.1\selenium-json-4.18.1.jar;C:\Users\ADMIN\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.18.1\selenium-manager-4.18.1.jar;C:\Users\ADMIN\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v120\4.18.1\selenium-devtools-v120-4.18.1.jar;C:\Users\ADMIN\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v121\4.18.1\selenium-devtools-v121-4.18.1.jar;C:\Users\ADMIN\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v122\4.18.1\selenium-devtools-v122-4.18.1.jar;C:\Users\ADMIN\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.18.1\selenium-devtools-v85-4.18.1.jar;C:\Users\ADMIN\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.18.1\selenium-edge-driver-4.18.1.jar;C:\Users\ADMIN\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.18.1\selenium-firefox-driver-4.18.1.jar;C:\Users\ADMIN\.m2\repository\org\seleniumhq\selenium\selenium-http\4.18.1\selenium-http-4.18.1.jar;C:\Users\ADMIN\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\ADMIN\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.18.1\selenium-ie-driver-4.18.1.jar;C:\Users\ADMIN\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.18.1\selenium-remote-driver-4.18.1.jar;C:\Users\ADMIN\.m2\repository\com\google\guava\guava\33.0.0-jre\guava-33.0.0-jre.jar;C:\Users\ADMIN\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\ADMIN\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\ADMIN\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\ADMIN\.m2\repository\org\checkerframework\checker-qual\3.41.0\checker-qual-3.41.0.jar;C:\Users\ADMIN\.m2\repository\com\google\errorprone\error_prone_annotations\2.23.0\error_prone_annotations-2.23.0.jar;C:\Users\ADMIN\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\ADMIN\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.23.1-alpha\opentelemetry-semconv-1.23.1-alpha.jar;C:\Users\ADMIN\.m2\repository\io\opentelemetry\opentelemetry-api\1.35.0\opentelemetry-api-1.35.0.jar;C:\Users\ADMIN\.m2\repository\io\opentelemetry\opentelemetry-context\1.35.0\opentelemetry-context-1.35.0.jar;C:\Users\ADMIN\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.35.0\opentelemetry-exporter-logging-1.35.0.jar;C:\Users\ADMIN\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.35.0\opentelemetry-sdk-common-1.35.0.jar;C:\Users\ADMIN\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.35.0\opentelemetry-sdk-extension-autoconfigure-spi-1.35.0.jar;C:\Users\ADMIN\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.35.0\opentelemetry-sdk-extension-autoconfigure-1.35.0.jar;C:\Users\ADMIN\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.35.0-alpha\opentelemetry-api-events-1.35.0-alpha.jar;C:\Users\ADMIN\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.35.0\opentelemetry-sdk-trace-1.35.0.jar;C:\Users\ADMIN\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.35.0-alpha\opentelemetry-extension-incubator-1.35.0-alpha.jar;C:\Users\ADMIN\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.35.0\opentelemetry-sdk-1.35.0.jar;C:\Users\ADMIN\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.35.0\opentelemetry-sdk-metrics-1.35.0.jar;C:\Users\ADMIN\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.35.0\opentelemetry-sdk-logs-1.35.0.jar;C:\Users\ADMIN\.m2\repository\net\bytebuddy\byte-buddy\1.14.12\byte-buddy-1.14.12.jar;C:\Users\ADMIN\.m2\repository\org\seleniumhq\selenium\selenium-os\4.18.1\selenium-os-4.18.1.jar;C:\Users\ADMIN\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\ADMIN\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.18.1\selenium-safari-driver-4.18.1.jar;C:\Users\ADMIN\.m2\repository\org\seleniumhq\selenium\selenium-support\4.18.1\selenium-support-4.18.1.jar;C:\Users\ADMIN\.m2\repository\org\testng\testng\7.9.0\testng-7.9.0.jar;C:\Users\ADMIN\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\ADMIN\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\ADMIN\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\ADMIN\.m2\repository\io\cucumber\cucumber-java\7.15.0\cucumber-java-7.15.0.jar;C:\Users\ADMIN\.m2\repository\io\cucumber\cucumber-core\7.15.0\cucumber-core-7.15.0.jar;C:\Users\ADMIN\.m2\repository\io\cucumber\cucumber-gherkin\7.15.0\cucumber-gherkin-7.15.0.jar;C:\Users\ADMIN\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.15.0\cucumber-gherkin-messages-7.15.0.jar;C:\Users\ADMIN\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\ADMIN\.m2\repository\io\cucumber\tag-expressions\6.0.0\tag-expressions-6.0.0.jar;C:\Users\ADMIN\.m2\repository\io\cucumber\cucumber-expressions\17.0.1\cucumber-expressions-17.0.1.jar;C:\Users\ADMIN\.m2\repository\io\cucumber\datatable\7.15.0\datatable-7.15.0.jar;C:\Users\ADMIN\.m2\repository\io\cucumber\cucumber-plugin\7.15.0\cucumber-plugin-7.15.0.jar;C:\Users\ADMIN\.m2\repository\io\cucumber\docstring\7.15.0\docstring-7.15.0.jar;C:\Users\ADMIN\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\ADMIN\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\ADMIN\.m2\repository\io\cucumber\ci-environment\10.0.0\ci-environment-10.0.0.jar;C:\Users\ADMIN\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\ADMIN\.m2\repository\io\cucumber\cucumber-testng\7.15.0\cucumber-testng-7.15.0.jar;C:\Users\ADMIN\.m2\repository\io\qameta\allure\allure-cucumber7-jvm\2.25.0\allure-cucumber7-jvm-2.25.0.jar;C:\Users\ADMIN\.m2\repository\io\qameta\allure\allure-java-commons\2.25.0\allure-java-commons-2.25.0.jar;C:\Users\ADMIN\.m2\repository\io\qameta\allure\allure-model\2.25.0\allure-model-2.25.0.jar;C:\Users\ADMIN\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\ADMIN\.m2\repository\io\qameta\allure\allure-testng\2.33.0\allure-testng-2.33.0.jar;C:\Users\ADMIN\.m2\repository\io\qameta\allure\allure-test-filter\2.33.0\allure-test-filter-2.33.0.jar;C:\Users\ADMIN\.m2\repository\io\qameta\allure\allure-attachments\2.33.0\allure-attachments-2.33.0.jar;C:\Users\ADMIN\.m2\repository\org\freemarker\freemarker\2.3.33\freemarker-2.3.33.jar;C:\Users\ADMIN\.m2\repository\org\aspectj\aspectjweaver\1.9.25.1\aspectjweaver-1.9.25.1.jar;C:\Users\ADMIN\.m2\repository\org\apache\logging\log4j\log4j-api\2.22.1\log4j-api-2.22.1.jar;C:\Users\ADMIN\.m2\repository\org\apache\logging\log4j\log4j-core\2.22.1\log4j-core-2.22.1.jar;"/>
     <property name="allure.results.directory" value="allure-results"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\ADMIN\AppData\Local\Temp\surefire4595238713396841816\surefirebooter-20260418142414409_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\ADMIN\AppData\Local\Temp\surefire11099301003809670731\surefirebooter-20260429141915009_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="22.0.2+9-FR"/>
@@ -48,6 +48,7 @@
     <property name="java.io.tmpdir" value="C:\Users\ADMIN\AppData\Local\Temp\"/>
     <property name="idea.version" value="2024.1.4"/>
     <property name="java.version" value="22.0.2"/>
+    <property name="cucumber.filter.tags" value="not @ignore"/>
     <property name="user.dir" value="F:\PracticeAuto"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
@@ -61,91 +62,24 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="66.0"/>
   </properties>
-  <testcase name="runScenario[&quot;Kiểm tra chức năng login&quot;, &quot;Login&quot;](1)" classname="runners.CrossBrowserRunner" time="12.928">
+  <testcase name="runScenario[&quot;Kiểm tra chức năng login&quot;, &quot;Login&quot;](1)" classname="runners.ParallelRunner" time="6.924">
     <system-out><![CDATA[
-Scenario Outline: Kiểm tra chức năng login            &amp#27;[90m# src/test/resources/features/login.feature:12&amp#27;[0m
-
-Scenario Outline: Kiểm tra chức năng login            &amp#27;[90m# src/test/resources/features/login.feature:12&amp#27;[0m
-
-Scenario Outline: Kiểm tra chức năng login            &amp#27;[90m# src/test/resources/features/login.feature:12&amp#27;[0m
-Thread: 37 | Browser: firefox
-Thread: 38 | Browser: edge
-Thread: 36 | Browser: chrome
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mmở trang login&amp#27;[0m                                &amp#27;[90m# ui.stepdefinitions.LoginSteps.open()&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mnhập email &amp#27;[0m&amp#27;[32m&amp#27;[1m"admin@email.com"&amp#27;[0m&amp#27;[32m và password &amp#27;[0m&amp#27;[32m&amp#27;[1m"123"&amp#27;[0m &amp#27;[90m# ui.stepdefinitions.LoginSteps.inputData(java.lang.String,java.lang.String)&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthực hiện đăng nhập bằng &amp#27;[0m&amp#27;[32m&amp#27;[1m"click"&amp#27;[0m                &amp#27;[90m# ui.stepdefinitions.LoginSteps.loginWithAction(java.lang.String)&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mmở trang login&amp#27;[0m                                &amp#27;[90m# ui.stepdefinitions.LoginSteps.open()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mlogin &amp#27;[0m&amp#27;[32m&amp#27;[1m"thành công"&amp#27;[0m                             &amp#27;[90m# ui.stepdefinitions.LoginSteps.login(java.lang.String)&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mnhập email &amp#27;[0m&amp#27;[32m&amp#27;[1m"admin@email.com"&amp#27;[0m&amp#27;[32m và password &amp#27;[0m&amp#27;[32m&amp#27;[1m"123"&amp#27;[0m &amp#27;[90m# ui.stepdefinitions.LoginSteps.inputData(java.lang.String,java.lang.String)&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthực hiện đăng nhập bằng &amp#27;[0m&amp#27;[32m&amp#27;[1m"click"&amp#27;[0m                &amp#27;[90m# ui.stepdefinitions.LoginSteps.loginWithAction(java.lang.String)&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mmở trang login&amp#27;[0m                                &amp#27;[90m# ui.stepdefinitions.LoginSteps.open()&amp#27;[0m
+@regression
+Scenario Outline: Kiểm tra chức năng login                   &amp#27;[90m# src/test/resources/features/login.feature:13&amp#27;[0m
+Thread: 34 | Browser: null
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mmở trang login&amp#27;[0m                                       &amp#27;[90m# ui.stepDefinitions.LoginSteps.open()&amp#27;[0m
+ui.pages.HomePage@4af5b47f
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mnhập email &amp#27;[0m&amp#27;[32m&amp#27;[1m"standard_user"&amp#27;[0m&amp#27;[32m và password &amp#27;[0m&amp#27;[32m&amp#27;[1m"secret_sauce"&amp#27;[0m &amp#27;[90m# ui.stepDefinitions.LoginSteps.inputData(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mngười dùng thực hiện đăng nhập&amp#27;[0m                         &amp#27;[90m# ui.stepDefinitions.LoginSteps.login()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mhệ thống hiển thị kết quả &amp#27;[0m&amp#27;[32m&amp#27;[1m"thành công"&amp#27;[0m                &amp#27;[90m# ui.stepDefinitions.LoginSteps.resultLogin(java.lang.String)&amp#27;[0m
 ]]></system-out>
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Apr 18, 2026 2:24:18 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$1
-WARNING: There was an error managing msedgedriver (error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_147_WINDOWS): error trying to connect: dns error: No such host is known. (os error 11001)); using driver found in the cache
-Apr 18, 2026 2:24:21 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Apr 29, 2026 2:19:21 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 147
-Apr 18, 2026 2:24:21 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 147
-Apr 18, 2026 2:24:21 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 147.0.3912.72. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-Apr 18, 2026 2:24:21 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 147.0.7727.56. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Apr 29, 2026 2:19:21 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 147.0.7727.103. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
-  </testcase>
-  <testcase name="runScenario[&quot;Kiểm tra chức năng login&quot;, &quot;Login&quot;](1)" classname="runners.CrossBrowserRunner" time="2.073">
-    <system-out><![CDATA[
-Scenario Outline: Kiểm tra chức năng login            &amp#27;[90m# src/test/resources/features/login.feature:13&amp#27;[0m
-Thread: 36 | Browser: chrome
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mnhập email &amp#27;[0m&amp#27;[32m&amp#27;[1m"admin@email.com"&amp#27;[0m&amp#27;[32m và password &amp#27;[0m&amp#27;[32m&amp#27;[1m"123"&amp#27;[0m &amp#27;[90m# ui.stepdefinitions.LoginSteps.inputData(java.lang.String,java.lang.String)&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthực hiện đăng nhập bằng &amp#27;[0m&amp#27;[32m&amp#27;[1m"click"&amp#27;[0m                &amp#27;[90m# ui.stepdefinitions.LoginSteps.loginWithAction(java.lang.String)&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mlogin &amp#27;[0m&amp#27;[32m&amp#27;[1m"thành công"&amp#27;[0m                             &amp#27;[90m# ui.stepdefinitions.LoginSteps.login(java.lang.String)&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mlogin &amp#27;[0m&amp#27;[32m&amp#27;[1m"thành công"&amp#27;[0m                             &amp#27;[90m# ui.stepdefinitions.LoginSteps.login(java.lang.String)&amp#27;[0m
-]]></system-out>
-    <system-err><![CDATA[Apr 18, 2026 2:24:32 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 147
-Apr 18, 2026 2:24:32 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 147.0.7727.56. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-]]></system-err>
-  </testcase>
-  <testcase name="runScenario[&quot;Kiểm tra chức năng login&quot;, &quot;Login&quot;](1)" classname="runners.CrossBrowserRunner" time="1.285">
-    <system-out><![CDATA[
-Scenario Outline: Kiểm tra chức năng login            &amp#27;[90m# src/test/resources/features/login.feature:13&amp#27;[0m
-Thread: 38 | Browser: edge
-]]></system-out>
-    <system-err><![CDATA[Apr 18, 2026 2:24:33 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$1
-WARNING: There was an error managing msedgedriver (error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_147_WINDOWS): error trying to connect: dns error: No such host is known. (os error 11001)); using driver found in the cache
-]]></system-err>
-  </testcase>
-  <testcase name="runScenario[&quot;Kiểm tra chức năng login&quot;, &quot;Login&quot;](2)" classname="runners.CrossBrowserRunner" time="8.172">
-    <system-out><![CDATA[
-Scenario Outline: Kiểm tra chức năng login            &amp#27;[90m# src/test/resources/features/login.feature:13&amp#27;[0m
-Thread: 37 | Browser: firefox
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mmở trang login&amp#27;[0m                                &amp#27;[90m# ui.stepdefinitions.LoginSteps.open()&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mnhập email &amp#27;[0m&amp#27;[32m&amp#27;[1m"owner@email.com"&amp#27;[0m&amp#27;[32m và password &amp#27;[0m&amp#27;[32m&amp#27;[1m"123"&amp#27;[0m &amp#27;[90m# ui.stepdefinitions.LoginSteps.inputData(java.lang.String,java.lang.String)&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthực hiện đăng nhập bằng &amp#27;[0m&amp#27;[32m&amp#27;[1m"enter"&amp#27;[0m                &amp#27;[90m# ui.stepdefinitions.LoginSteps.loginWithAction(java.lang.String)&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mlogin &amp#27;[0m&amp#27;[32m&amp#27;[1m"thành công"&amp#27;[0m                             &amp#27;[90m# ui.stepdefinitions.LoginSteps.login(java.lang.String)&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mmở trang login&amp#27;[0m                                &amp#27;[90m# ui.stepdefinitions.LoginSteps.open()&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mnhập email &amp#27;[0m&amp#27;[32m&amp#27;[1m"owner@email.com"&amp#27;[0m&amp#27;[32m và password &amp#27;[0m&amp#27;[32m&amp#27;[1m"123"&amp#27;[0m &amp#27;[90m# ui.stepdefinitions.LoginSteps.inputData(java.lang.String,java.lang.String)&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthực hiện đăng nhập bằng &amp#27;[0m&amp#27;[32m&amp#27;[1m"enter"&amp#27;[0m                &amp#27;[90m# ui.stepdefinitions.LoginSteps.loginWithAction(java.lang.String)&amp#27;[0m
-]]></system-out>
-    <system-err><![CDATA[Apr 18, 2026 2:24:34 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 147
-Apr 18, 2026 2:24:34 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 147.0.3912.72. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-]]></system-err>
-  </testcase>
-  <testcase name="runScenario[&quot;Kiểm tra chức năng login&quot;, &quot;Login&quot;](2)" classname="runners.CrossBrowserRunner" time="9.221">
-    <system-out><![CDATA[  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mlogin &amp#27;[0m&amp#27;[32m&amp#27;[1m"thành công"&amp#27;[0m                             &amp#27;[90m# ui.stepdefinitions.LoginSteps.login(java.lang.String)&amp#27;[0m
-]]></system-out>
-  </testcase>
-  <testcase name="runScenario[&quot;Kiểm tra chức năng login&quot;, &quot;Login&quot;](2)" classname="runners.CrossBrowserRunner" time="14.446">
-    <system-out><![CDATA[  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mmở trang login&amp#27;[0m                                &amp#27;[90m# ui.stepdefinitions.LoginSteps.open()&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mnhập email &amp#27;[0m&amp#27;[32m&amp#27;[1m"owner@email.com"&amp#27;[0m&amp#27;[32m và password &amp#27;[0m&amp#27;[32m&amp#27;[1m"123"&amp#27;[0m &amp#27;[90m# ui.stepdefinitions.LoginSteps.inputData(java.lang.String,java.lang.String)&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthực hiện đăng nhập bằng &amp#27;[0m&amp#27;[32m&amp#27;[1m"enter"&amp#27;[0m                &amp#27;[90m# ui.stepdefinitions.LoginSteps.loginWithAction(java.lang.String)&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mlogin &amp#27;[0m&amp#27;[32m&amp#27;[1m"thành công"&amp#27;[0m                             &amp#27;[90m# ui.stepdefinitions.LoginSteps.login(java.lang.String)&amp#27;[0m
-]]></system-out>
   </testcase>
 </testsuite>

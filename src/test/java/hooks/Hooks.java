@@ -2,6 +2,7 @@ package hooks;
 
 import core.driver.DriverFactory;
 import io.cucumber.java.*;
+import utils.ConfigReader;
 import utils.ScreenshotUtils;
 
 public class Hooks {
@@ -9,7 +10,7 @@ public class Hooks {
     public void setUp() {
         DriverFactory.initDriver();
         DriverFactory.getDriver()
-                .get("https://rawal-admin.themes-coder.net/admin/login");
+                .get(ConfigReader.get("baseUrl"));
         DriverFactory.getDriver()
                 .manage()
                 .window()

@@ -1,5 +1,6 @@
 runners\CrossBrowserRunner.class
 runners\ParallelRunner.class
-ui\stepdefinitions\LoginSteps.class
+ui\stepDefinitions\LoginSteps.class
+ui\pages\HomePage.class
 hooks\Hooks.class
 ui\pages\LoginPage.class

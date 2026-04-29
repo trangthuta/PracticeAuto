@@ -1,0 +1,7 @@
+<suite name="ParallelSuite">
+    <test name="Parallel">
+        <classes>
+            <class name="runners.ParallelRunner"/>
+        </classes>
+    </test>
+</suite>

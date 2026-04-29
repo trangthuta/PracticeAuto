@@ -1,0 +1,7 @@
+<suite name="ParallelSuite">
+    <test name="Run all of testcases">
+        <classes>
+<!--            <class name="runners.ParallelRunner"/>-->
+        </classes>
+    </test>
+</suite>

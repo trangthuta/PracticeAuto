@@ -1,8 +1,0 @@
-<suite name="ParallelSuite" parallel="methods" thread-count="5">
-    <parameter name="browser" value="chrome"/>
-    <test name="ChromeTest">
-        <classes>
-            <class name="runners.ParallelRunner"/>
-        </classes>
-    </test>
-</suite>

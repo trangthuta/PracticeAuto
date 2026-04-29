@@ -5,6 +5,8 @@
     <version>1.0</version>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <cucumber.filter.tags>not @ignore</cucumber.filter.tags>
+
     </properties>
     <dependencies>
         <dependency>
@@ -75,20 +77,23 @@
                 <version>3.0.0</version>
 
                 <configuration>
-<!--                    <includes>-->
-<!--                        <include>**/TestUiRunner.java</include>-->
-<!--                    </includes>-->
+                    <!--                    <includes>-->
+                    <!--                        <include>**/TestUiRunner.java</include>-->
+                    <!--                    </includes>-->
                     <suiteXmlFiles>
-                        <suiteXmlFile>src/main/resources/cross-browser.xml</suiteXmlFile>
-<!--                        <suiteXmlFile>src/main/resources/parallel.xml</suiteXmlFile>-->
+                        <!--                        <suiteXmlFile>src/main/resources/SuiteCrossBrowser.xml</suiteXmlFile>-->
+                        <suiteXmlFile>src/main/resources/SuiteParallel.xml</suiteXmlFile>
                     </suiteXmlFiles>
                     <!-- Setup Allure report -->
+                    <!--suppress UnresolvedMavenProperty -->
                     <argLine>
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/1.9.25.1/aspectjweaver-1.9.25.1.jar"
                     </argLine>
 
                     <systemPropertyVariables>
                         <allure.results.directory>allure-results</allure.results.directory>
+                        <!--suppress UnresolvedMavenProperty -->
+                        <cucumber.filter.tags>${cucumber.filter.tags}</cucumber.filter.tags>
                     </systemPropertyVariables>
                 </configuration>
             </plugin>

@@ -10,22 +10,13 @@ import org.testng.annotations.Parameters;
 
 @CucumberOptions(
         features = "src/test/resources/features",
-        glue = {"ui.stepdefinitions", "hooks"},
+        glue = {"ui.stepDefinitions", "hooks"},
         plugin = {
                 "pretty",
                 "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
         }
 )
 public class ParallelRunner extends AbstractTestNGCucumberTests {
-    public static String browser;
-
-    @Parameters("browser")
-    @BeforeClass
-    public void setupBrowser(@Optional("chrome")String browserName) {
-        browser = browserName;
-        DriverFactory.setBrowserName(browser);
-    }
-
     @Override
     @DataProvider(parallel = true)
     public Object[][] scenarios() {

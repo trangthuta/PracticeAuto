@@ -21,17 +21,13 @@ public class DriverFactory {
 
 
     public static void initDriver() {
-        String browser = browserName.get();
-        if (browser == null || browser.isEmpty()) {
-            if (System.getProperty("browser") == null) {
-                browser = "chrome";
-            } else {
-                browser = System.getProperty("browser");
-            }
+        String browser = browserName.get(); //xml
+        if (System.getProperty("browser") != null){
+            browser = System.getProperty("browser") ;
         }
         System.out.println("Thread: " + Thread.currentThread().getId()
                 + " | Browser: " + browser);
-        switch (browser.toLowerCase()) {
+        switch (browser == null ? "" : browser.toLowerCase()) {
 
             case "firefox":
                 driver.set(new FirefoxDriver());

@@ -1,5 +1,6 @@
 F:\PracticeAuto\src\test\java\runners\ParallelRunner.java
+F:\PracticeAuto\src\test\java\ui\pages\HomePage.java
 F:\PracticeAuto\src\test\java\hooks\Hooks.java
 F:\PracticeAuto\src\test\java\ui\pages\LoginPage.java
-F:\PracticeAuto\src\test\java\ui\stepdefinitions\LoginSteps.java
+F:\PracticeAuto\src\test\java\ui\stepDefinitions\LoginSteps.java
 F:\PracticeAuto\src\test\java\runners\CrossBrowserRunner.java
